@@ -13,7 +13,7 @@ void topic_callback(const std_msgs::msg::Int32::SharedPtr msg)
     std::sort(numbers.begin(), numbers.end()); // Ordeno el vector
     
     // Muestro el vector de números recibido
-    std::cout << "Vector de números: ";
+    std::cout << "Vector de números ordenados: ";
     for (int num : numbers) {
         std::cout << num << " ";
     }
