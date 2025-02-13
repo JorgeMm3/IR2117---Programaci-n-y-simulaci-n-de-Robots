@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "publisher"
+			"path" : "square"
 		}
 	],
 	"backtrace" : 1,
@@ -245,7 +245,7 @@
 			]
 		}
 	],
-	"id" : "publisher::@6890427a1f51a3e7e1df",
+	"id" : "square::@6890427a1f51a3e7e1df",
 	"install" : 
 	{
 		"destinations" : 
@@ -536,8 +536,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "publisher",
-	"nameOnDisk" : "publisher",
+	"name" : "square",
+	"nameOnDisk" : "square",
 	"paths" : 
 	{
 		"build" : ".",
@@ -558,7 +558,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/publisher.cpp",
+			"path" : "src/square.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

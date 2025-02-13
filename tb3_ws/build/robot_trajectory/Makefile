@@ -198,41 +198,41 @@ robot_trajectory_uninstall/fast:
 .PHONY : robot_trajectory_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named publisher
+# Target rules for targets named square
 
 # Build rule for target.
-publisher: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 publisher
-.PHONY : publisher
+square: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 square
+.PHONY : square
 
 # fast build rule for target.
-publisher/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/build
-.PHONY : publisher/fast
+square/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/square.dir/build.make CMakeFiles/square.dir/build
+.PHONY : square/fast
 
-src/publisher.o: src/publisher.cpp.o
-.PHONY : src/publisher.o
+src/square.o: src/square.cpp.o
+.PHONY : src/square.o
 
 # target to build an object file
-src/publisher.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/src/publisher.cpp.o
-.PHONY : src/publisher.cpp.o
+src/square.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/square.dir/build.make CMakeFiles/square.dir/src/square.cpp.o
+.PHONY : src/square.cpp.o
 
-src/publisher.i: src/publisher.cpp.i
-.PHONY : src/publisher.i
+src/square.i: src/square.cpp.i
+.PHONY : src/square.i
 
 # target to preprocess a source file
-src/publisher.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/src/publisher.cpp.i
-.PHONY : src/publisher.cpp.i
+src/square.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/square.dir/build.make CMakeFiles/square.dir/src/square.cpp.i
+.PHONY : src/square.cpp.i
 
-src/publisher.s: src/publisher.cpp.s
-.PHONY : src/publisher.s
+src/square.s: src/square.cpp.s
+.PHONY : src/square.s
 
 # target to generate assembly for a file
-src/publisher.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/src/publisher.cpp.s
-.PHONY : src/publisher.cpp.s
+src/square.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/square.dir/build.make CMakeFiles/square.dir/src/square.cpp.s
+.PHONY : src/square.cpp.s
 
 # Help Target
 help:
@@ -249,10 +249,10 @@ help:
 	@echo "... test"
 	@echo "... robot_trajectory_uninstall"
 	@echo "... uninstall"
-	@echo "... publisher"
-	@echo "... src/publisher.o"
-	@echo "... src/publisher.i"
-	@echo "... src/publisher.s"
+	@echo "... square"
+	@echo "... src/square.o"
+	@echo "... src/square.i"
+	@echo "... src/square.s"
 .PHONY : help
 
 

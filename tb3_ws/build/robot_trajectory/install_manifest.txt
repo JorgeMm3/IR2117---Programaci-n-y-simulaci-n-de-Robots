@@ -1,4 +1,4 @@
-/home/usuario/Documentos/GitHub/IR2117---Programaci-n-y-simulaci-n-de-Robots/tb3_ws/install/robot_trajectory/lib/robot_trajectory/publisher
+/home/usuario/Documentos/GitHub/IR2117---Programaci-n-y-simulaci-n-de-Robots/tb3_ws/install/robot_trajectory/lib/robot_trajectory/square
 /home/usuario/Documentos/GitHub/IR2117---Programaci-n-y-simulaci-n-de-Robots/tb3_ws/install/robot_trajectory/share/ament_index/resource_index/package_run_dependencies/robot_trajectory
 /home/usuario/Documentos/GitHub/IR2117---Programaci-n-y-simulaci-n-de-Robots/tb3_ws/install/robot_trajectory/share/ament_index/resource_index/parent_prefix_path/robot_trajectory
 /home/usuario/Documentos/GitHub/IR2117---Programaci-n-y-simulaci-n-de-Robots/tb3_ws/install/robot_trajectory/share/robot_trajectory/environment/ament_prefix_path.sh
