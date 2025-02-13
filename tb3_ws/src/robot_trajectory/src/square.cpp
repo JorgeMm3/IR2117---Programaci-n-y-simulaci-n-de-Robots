@@ -13,6 +13,8 @@ int main(int argc, char * argv[])
     rclcpp::WallRate loop_rate(500ms);
 
     while (rclcpp::ok()) {
+        message.linear.x = 1.0;
+        message.linear.z = 1.0;
         publisher->publish(message);
         rclcpp::spin_some(node);
         loop_rate.sleep();
