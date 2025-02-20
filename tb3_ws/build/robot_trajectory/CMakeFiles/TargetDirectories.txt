@@ -1,6 +1,7 @@
 /home/usuario/Documentos/GitHub/IR2117---Programaci-n-y-simulaci-n-de-Robots/tb3_ws/build/robot_trajectory/CMakeFiles/uninstall.dir
 /home/usuario/Documentos/GitHub/IR2117---Programaci-n-y-simulaci-n-de-Robots/tb3_ws/build/robot_trajectory/CMakeFiles/robot_trajectory_uninstall.dir
 /home/usuario/Documentos/GitHub/IR2117---Programaci-n-y-simulaci-n-de-Robots/tb3_ws/build/robot_trajectory/CMakeFiles/square.dir
+/home/usuario/Documentos/GitHub/IR2117---Programaci-n-y-simulaci-n-de-Robots/tb3_ws/build/robot_trajectory/CMakeFiles/square_odom.dir
 /home/usuario/Documentos/GitHub/IR2117---Programaci-n-y-simulaci-n-de-Robots/tb3_ws/build/robot_trajectory/CMakeFiles/test.dir
 /home/usuario/Documentos/GitHub/IR2117---Programaci-n-y-simulaci-n-de-Robots/tb3_ws/build/robot_trajectory/CMakeFiles/edit_cache.dir
 /home/usuario/Documentos/GitHub/IR2117---Programaci-n-y-simulaci-n-de-Robots/tb3_ws/build/robot_trajectory/CMakeFiles/rebuild_cache.dir

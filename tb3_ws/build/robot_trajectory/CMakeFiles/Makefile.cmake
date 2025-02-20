@@ -669,4 +669,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/uninstall.dir/DependInfo.cmake"
   "CMakeFiles/robot_trajectory_uninstall.dir/DependInfo.cmake"
   "CMakeFiles/square.dir/DependInfo.cmake"
+  "CMakeFiles/square_odom.dir/DependInfo.cmake"
   )
