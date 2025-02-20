@@ -11,7 +11,7 @@ void topic_callback(const nav_msgs::msg::Odometry::SharedPtr msg){
 
   x = msg->pose.pose.position.x;
   y = msg->pose.pose.position.y;
-  angle = msg->pose.pose.orientation.w;
+  angle = atan2(x, y);
   std::cout << "Poition X: " << x << std::endl;
   std::cout << "Position Y: " << y << std::endl;
   std::cout << "Orientation: " << angle << std::endl;
@@ -27,7 +27,7 @@ int main(int argc, char * argv[]){
   rclcpp::spin(node);
   
   auto node1 = rclcpp::Node::make_shared("publisher");
-  auto publisher = node->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
+  auto publisher = node1->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
   node->declare_parameter("square_length", 1.0);
   node->declare_parameter("linear_speed", 0.1);
   node->declare_parameter("angular_speed",M_PI_2);
@@ -64,5 +64,5 @@ int main(int argc, char * argv[]){
 
   rclcpp::shutdown();
   return 0;
-  
+
 }
