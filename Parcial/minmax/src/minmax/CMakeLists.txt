@@ -13,8 +13,12 @@ find_package(std_msgs REQUIRED)
 add_executable(min src/min.cpp)
 ament_target_dependencies(min rclcpp std_msgs)
 
+add_executable(max src/max.cpp)
+ament_target_dependencies(max rclcpp std_msgs)
+
 install(TARGETS
   min
+  max
   DESTINATION lib/${PROJECT_NAME}
 )
 
