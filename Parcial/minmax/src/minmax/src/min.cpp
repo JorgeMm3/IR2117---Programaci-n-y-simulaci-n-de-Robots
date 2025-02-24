@@ -3,16 +3,34 @@
 #include <iostream>
 
 int min = 0;
+int aux = 0;
 int message_count = 0;
 std::shared_ptr< rclcpp::Publisher<std_msgs::msg::Int32> > publisher;
 
 void topic_callback(const std_msgs::msg::Int32::SharedPtr msg)
-{
+{        
     min =  msg->data;
     message_count++;
     std_msgs::msg::Int32 out_msg;
-    out_msg.data = min;
+
+    while (message_count > 1){    
+        aux = msg->data;
+        if (min < aux) {
+            out_msg.data = min;
+            std::cout << "Min: " << min << std::endl;
+
+        } else {
+            out_msg.data = aux;
+            std::cout << "Min: " << aux << std::endl;
+        }
+    }
+
+    if (message_count < 1) {
+        out_msg.data = 0;
+    }
+
     publisher->publish(out_msg);
+  
 }
 
 int main(int argc, char * argv[])
