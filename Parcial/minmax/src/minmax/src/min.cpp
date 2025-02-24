@@ -29,6 +29,12 @@ void topic_callback(const std_msgs::msg::Int32::SharedPtr msg)
         out_msg.data = 0;
     }
 
+     if (message_count == 1) {
+        out_msg.data = min;
+        std::cout << "Min: " << aux << std::endl;
+
+    }
+
     publisher->publish(out_msg);
   
 }
