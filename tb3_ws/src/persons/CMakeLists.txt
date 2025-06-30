@@ -1,32 +1,31 @@
 cmake_minimum_required(VERSION 3.8)
-project(robot_trajectory)
+project(persons)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
+
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(geometry_msgs REQUIRED)
-find_package(nav_msgs)
 find_package(sensor_msgs REQUIRED)
+find_package(example_interfaces REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
-add_executable(square src/square.cpp)
-ament_target_dependencies(square rclcpp geometry_msgs)
+add_executable(detector src/detector.cpp)
+add_executable(follower src/follower.cpp)
 
-add_executable(square_odom src/square_odom.cpp)
-ament_target_dependencies(square_odom rclcpp nav_msgs)
+ament_target_dependencies(detector rclcpp sensor_msgs example_interfaces)
+ament_target_dependencies(follower rclcpp example_interfaces geometry_msgs)
 
-add_executable(wandering src/wandering.cpp)
-ament_target_dependencies(wandering rclcpp geometry_msgs nav_msgs sensor_msgs)
+install (TARGETS
+  detector
+  follower
+  DESTINATION lib/${PROJECT_NAME})
 
-install(TARGETS 
-  square
-  square_odom
-  wandering
-  DESTINATION lib/${PROJECT_NAME}
-)
+install (DIRECTORY launch
+  DESTINATION share/${PROJECT_NAME})
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

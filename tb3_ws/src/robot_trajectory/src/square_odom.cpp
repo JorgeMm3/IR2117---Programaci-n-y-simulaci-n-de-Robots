@@ -50,7 +50,7 @@ int main(int argc, char * argv[]){
         i++;
     }
 
-    i=0, n=M_PI_2/(0.01 * angular_speed);
+    i=0, n=M_PI_2/(0.01 * angular_speed); 
     while (rclcpp::ok() && (i<n)){
         message.linear.x = 0.0; 
         message.angular.z = M_PI/20;
